@@ -18,11 +18,10 @@ const Skills = (props) => {
   return (
     <div data-aos="zoom-in" className={`${props.className} ${classes.skills}`}>
       <h2> here is what i do.. </h2>
-
       <p>
-        Good understanding of all front end layers: javascript, html and css,
-        with working experience on React.js as a framework. <br />
-        <br />
+        Good understanding of javascript, html and css. with working experience
+        on React.js as a framework. basic understanding of server side and how
+        things work with node.js, mongoDb and also PHP.
       </p>
       <h3>front end technologies i practice</h3>
       <ul>{techList}</ul>
