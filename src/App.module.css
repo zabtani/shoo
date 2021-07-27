@@ -1,0 +1,73 @@
+.app {
+  text-align: center;
+}
+.section {
+  background-color: #d1d1d169;
+  margin: 2.5% auto 2.5% auto;
+  width: 90%;
+  height: fit-content;
+  padding: 0.5%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.section p {
+  overflow-wrap: break-word;
+  font-size: 1.3rem;
+  width: 80%;
+  padding: 1%;
+  text-align: left;
+}
+h1,
+h2,
+h3 {
+  color: #3aadd6;
+
+  margin: 0.2%;
+  font-family: 'Libre Baskerville', serif;
+}
+h3 {
+  text-align: left;
+  font-size: 1.1rem;
+  margin: 1% auto 1% auto;
+  text-align: center;
+  width: fit-content;
+  padding: 0.5%;
+  background-color: rgba(194, 194, 194, 0.39);
+}
+h1 {
+  font-size: 5rem;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h2 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+@media only screen and (max-width: 650px) {
+  .section {
+    margin-top: 20%;
+  }
+
+  .section p {
+    font-size: 0.6rem;
+  }
+  .section h2 {
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 0.8rem;
+  }
+}

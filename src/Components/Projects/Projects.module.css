@@ -1,0 +1,41 @@
+.projectsContainer {
+  display: flex;
+  width: 100%;
+}
+.project p {
+  width: 96%;
+  padding: 2%;
+}
+.project h3 {
+  width: auto;
+}
+.project img {
+  height: 13rem;
+  width: 23.5rem;
+}
+.project {
+  margin: 0 2% 2% 2%;
+  background: #d1d1d169;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-bottom: 2rem;
+}
+.demoLink {
+  background: rgba(0, 252, 0, 0.212);
+  width: fit-content;
+  border-radius: 8px;
+  padding: 2%;
+  margin: 2% auto 2% auto;
+}
+.demoLink:hover {
+  color: whitesmoke;
+  background: rgba(0, 179, 0, 0.575);
+}
+@media only screen and (max-width: 650px) {
+  .projectsContainer {
+    flex-direction: column;
+  }
+  .project img {
+    height: 8rem;
+    width: 16rem;
+  }
+}

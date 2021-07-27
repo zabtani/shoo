@@ -1,0 +1,150 @@
+.navbar nav {
+  width: 100%;
+  display: flex;
+}
+.navbar {
+  display: flex;
+  background: rgb(0, 121, 179);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 121, 179, 0.5105392498796393) 1%,
+    rgba(0, 122, 167, 1) 100%
+  );
+}
+.navbar ul {
+  display: flex;
+  width: 100%;
+}
+.navbar ul .sidelinks li,
+.logo {
+  padding-top: 0.4rem;
+  width: 2rem;
+  margin: 0 1% 0 1%;
+}
+
+.navbar ul .sidelinks {
+  justify-content: flex-end;
+}
+
+.logo:hover {
+  background-color: unset !important;
+}
+
+.navbar ul li button {
+  font-size: 0.9rem;
+  width: max-content;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  padding: 8px;
+}
+
+.navbar ul li:hover {
+  background-color: rgba(220, 220, 220, 0.356);
+}
+
+.navbar .menuButton:focus,
+.navbar .menuButton:hover {
+  background-color: #50b5da83;
+}
+
+.navbar nav .menuButton {
+  margin-left: 2.8%;
+  display: none;
+}
+.navbar .backdrop {
+  display: none;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  z-index: 1;
+  height: 100vh;
+  opacity: 0.5;
+}
+@media only screen and (max-width: 650px) {
+  .navbar.shown .backdrop {
+    display: block;
+  }
+  .navbar nav {
+    background: none;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .navbar nav .menuButton {
+    margin-top: 3%;
+    align-self: start;
+    display: block;
+    color: whitesmoke;
+    background-color: #50b5da83;
+  }
+
+  .navbar.shown nav .menuButton,
+  .navbar.shown nav .menuButton:focus {
+    background-color: whitesmoke;
+    color: #50b5da;
+  }
+  .navbar.shown nav {
+    width: 70%;
+    background: #50b5da;
+    border-right: 1rem solid rgba(54, 165, 255, 0.808);
+    border-style: groove;
+  }
+  .navbar.shown ul {
+    display: block;
+  }
+  .navbar nav ul {
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    display: none;
+  }
+
+  .navbar nav ul li {
+    margin-top: 9%;
+    border-radius: 15px;
+    width: 100%;
+    background: rgb(254, 254, 254);
+    background: radial-gradient(
+      circle,
+      rgba(254, 254, 254, 0.5105392498796393) 4%,
+      rgba(149, 149, 149, 0.2) 100%
+    );
+  }
+  .navbar nav ul li button {
+    font-size: 1.3rem;
+    width: 100%;
+  }
+  .navbar nav ul .sidelinks li {
+    margin: auto;
+    width: 3rem;
+    height: 3rem;
+    background: rgba(216, 191, 216, 0.39);
+  }
+  .logo {
+    display: none;
+  }
+  .navbar.shown nav .logo {
+    display: block;
+    width: 15%;
+    bottom: 0;
+    padding: 5%;
+  }
+  .navbar nav ul .sidelinks li {
+    padding: 2%;
+  }
+  .navbar nav ul .sidelinks {
+    margin-top: 50%;
+    height: fit-content;
+
+    display: flex;
+  }
+  .logo {
+    margin: auto;
+  }
+  .logo {
+    background-color: unset !important;
+  }
+}
