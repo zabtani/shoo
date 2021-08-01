@@ -457,7 +457,7 @@ button:focus {
 .product-item {
   margin: 0 0 2% 2%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
-  width: 9rem;
+  width: 13rem;
   max-width: 90%;
   border-radius: 0 0 15px 15px;
   overflow: hidden;
@@ -963,6 +963,10 @@ button:focus {
   }
   .cart.active {
     height: 85% !important;
+  }
+  .product-item {
+    width: 45%;
+    margin-bottom: 5%;
   }
 }
 @media only screen and (max-width: 375px) {
