@@ -140,7 +140,6 @@ header h1 {
   background-color: rgba(0, 174, 255, 0.2);
 }
 
-/*sadasdasdasdsfsdkjnafkjsjkdkjskjfnsakjfnjkdsanf*/
 /*backdrop*/
 .backdrop {
   position: fixed;
@@ -154,16 +153,21 @@ header h1 {
 }
 /*cart*/
 .cart {
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
   position: fixed;
   right: 0;
   text-align: center;
-  background-color: skyblue;
-  border-radius: 0 0 0 15px;
-  padding: 0.3rem 0rem 0 0rem;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+
+  padding: 0.8rem 0rem 0.5rem 0rem;
   z-index: 15;
   height: fit-content;
-  /* flex-direction: column;
-  justify-content: space-between; */
 }
 .cart-icon {
   font-size: 1.5rem;
@@ -853,8 +857,8 @@ button:focus {
 }
 
 #hamburger {
-  width: 5vh;
-  height: 5vh;
+  width: fit-content;
+  height: 5.5vh;
   margin: 1%;
   display: none;
 }
@@ -864,23 +868,22 @@ button:focus {
   background-color: rgba(0, 152, 212, 0.884);
   margin: 6px 0;
 }
-/* 
-.toggle-button:hover {
-  color: whitesmoke;
-  background-color: #8ec5fc;
-  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
-}
-.cart.active .toggle-button:hover {
-  background-image: none;
-} */
-/* ----------- Non-Retina Screens ----------- */
+
 @media only screen and (max-width: 650px) {
+  header h1 {
+    font-size: 68%;
+  }
   .cart {
-    background-color: rgba(116, 176, 200, 0.657);
-    font-size: 2rem;
+    height: 8vh;
+    width: 50%;
+    padding: 3% 0 4% 0;
+  }
+  .cart .toggle-button {
+    font-size: 70%;
   }
   .cart-icon {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    margin-top: 1%;
   }
   #hamburger {
     display: block;
@@ -917,8 +920,12 @@ button:focus {
     width: 100%;
   }
   #navbar {
-    margin-top: 15%;
+    margin-top: 25%;
     height: 100vh;
+  }
+  #headerTopCon.folded #navbar {
+    margin: 0;
+    height: 8vh;
   }
   #navbar ul li .dropdown-content {
     position: absolute;
