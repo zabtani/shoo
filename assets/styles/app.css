@@ -887,11 +887,8 @@ button:focus {
   #headerTopCon.folded .cart {
     height: fit-content;
   }
-  .cart .toggle-button {
-    font-size: 70%;
-  }
+
   .cart-icon {
-    font-size: 1rem;
     margin-top: 1%;
   }
   #hamburger {
