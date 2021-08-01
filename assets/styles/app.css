@@ -166,6 +166,7 @@ header h1 {
   justify-content: space-between; */
 }
 .cart-icon {
+  font-size: 1.5rem;
   margin: 0 0.3rem 0 0.3rem;
   color: rgba(0, 152, 212, 0.884);
 }
@@ -238,7 +239,7 @@ header h1 {
   overflow-x: unset;
 }
 .cart-total {
-  font-size: 0.6rem;
+  font-size: 0.8rem;
 
   align-self: center;
   font-weight: bolder;
@@ -843,12 +844,25 @@ button:focus {
 
 .toggle-button {
   margin-right: 0.2rem;
-  font-size: 0.5rem;
+  font-size: 1rem;
   border-radius: 10rem;
   transition: all 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
+}
+
+#hamburger {
+  width: 5vh;
+  height: 5vh;
+  margin: 1%;
+  display: none;
+}
+.hamburger-line {
+  width: 35px;
+  height: 5px;
+  background-color: rgba(0, 152, 212, 0.884);
+  margin: 6px 0;
 }
 /* 
 .toggle-button:hover {
@@ -861,14 +875,34 @@ button:focus {
 } */
 /* ----------- Non-Retina Screens ----------- */
 @media only screen and (max-width: 650px) {
-  header h1 {
-    font-size: 0.8rem;
-    margin: 5%;
+  .cart {
+    background-color: rgba(116, 176, 200, 0.657);
+    font-size: 2rem;
+  }
+  .cart-icon {
+    font-size: 1.5rem;
+  }
+  #hamburger {
+    display: block;
+  }
+  #headerTopCon.folded {
+    position: relative;
+    width: 100%;
+    flex-direction: row;
+  }
+  #headerTopCon.folded ul {
+    display: none;
+  }
+  #headerTopCon.folded #navbar {
+    height: 0;
+  }
+  #headerTopCon #hamburger {
+    align-self: center;
   }
   #headerTopCon {
     display: flex;
     flex-direction: column;
-    background: blanchedalmond;
+    background: skyblue;
     position: absolute;
     z-index: 3;
     width: 50%;
@@ -883,6 +917,7 @@ button:focus {
     width: 100%;
   }
   #navbar {
+    margin-top: 15%;
     height: 100vh;
   }
   #navbar ul li .dropdown-content {

@@ -42,10 +42,22 @@ class Header extends Component {
       this.#mainBackButtonEl.classList.remove('visible');
     }
   }
-
+  #generate_mobileHamburger(target) {
+    const mobileMenuButton = this.createElement('div', false, [
+      new ElementAttribute('id', 'hamburger'),
+    ]);
+    const burgerLine1 = this.createElement('div', 'hamburger-line');
+    const burgerLine2 = this.createElement('div', 'hamburger-line');
+    const burgerLine3 = this.createElement('div', 'hamburger-line');
+    mobileMenuButton.append(burgerLine1, burgerLine2, burgerLine3);
+    mobileMenuButton.addEventListener('click', () => {
+      target.classList.toggle('folded');
+    });
+    return mobileMenuButton;
+  }
   render() {
     const headerEl = this.createRootElement('header');
-    const topConEl = this.createElement('div', false, [
+    const topConEl = this.createElement('div', 'folded', [
       new ElementAttribute('id', 'headerTopCon'),
     ]);
     this.h1El = this.createElement('h1');
@@ -54,8 +66,8 @@ class Header extends Component {
     const navBarEl = this.createElement('div', false, [
       new ElementAttribute('id', 'navbar'),
     ]);
-
-    topConEl.append(this.h1El, navBarEl);
+    const hamburgerEl = this.#generate_mobileHamburger(topConEl);
+    topConEl.append(hamburgerEl, this.h1El, navBarEl);
     const bottomConEl = this.createElement('div', false, [
       new ElementAttribute('id', 'headerBottomCon'),
     ]);
