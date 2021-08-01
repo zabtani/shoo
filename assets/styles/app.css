@@ -950,7 +950,9 @@ button:focus {
     left: 100%;
     z-index: 20;
   }
-
+  #navbar ul li a {
+    pointer-events: none;
+  }
   #navbar ul li a,
   .dropbtn {
     width: 100%;
