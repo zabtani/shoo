@@ -79,6 +79,10 @@ class Categories extends Component {
     subs.forEach((sub) => {
       const a = this.createElement('a');
       a.addEventListener('click', () => {
+        const topConFolded = App.header.topConEl.classList.contains('folded');
+        if (!topConFolded) {
+          App.header.toggleDisplay();
+        }
         App.revealBackButton();
         linkEventHandler(sub);
       });

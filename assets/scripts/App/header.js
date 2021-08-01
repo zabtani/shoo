@@ -42,7 +42,13 @@ class Header extends Component {
       this.#mainBackButtonEl.classList.remove('visible');
     }
   }
-  #generate_mobileHamburger(target) {
+  toggleDisplay() {
+    this.topConEl.classList.toggle('folded');
+    document.body.style.overflow = this.topConEl.classList.contains('folded')
+      ? 'scroll'
+      : 'hidden';
+  }
+  #generate_mobileHamburger() {
     const mobileMenuButton = this.createElement('div', false, [
       new ElementAttribute('id', 'hamburger'),
     ]);
@@ -51,10 +57,7 @@ class Header extends Component {
     const burgerLine3 = this.createElement('div', 'hamburger-line');
     mobileMenuButton.append(burgerLine1, burgerLine2, burgerLine3);
     mobileMenuButton.addEventListener('click', () => {
-      target.classList.toggle('folded');
-      document.body.style.overflow = target.classList.contains('folded')
-        ? 'scroll'
-        : 'hidden';
+      this.toggleDisplay();
       const cartIsOpen = App.cart.cartEl.classList.contains('active');
       cartIsOpen && App.cart.toggleDisplay();
     });
@@ -62,7 +65,7 @@ class Header extends Component {
   }
   render() {
     const headerEl = this.createRootElement('header');
-    const topConEl = this.createElement('div', 'folded', [
+    this.topConEl = this.createElement('div', 'folded', [
       new ElementAttribute('id', 'headerTopCon'),
     ]);
     this.h1El = this.createElement('h1');
@@ -71,8 +74,8 @@ class Header extends Component {
     const navBarEl = this.createElement('div', false, [
       new ElementAttribute('id', 'navbar'),
     ]);
-    const hamburgerEl = this.#generate_mobileHamburger(topConEl);
-    topConEl.append(hamburgerEl, this.h1El, navBarEl);
+    const hamburgerEl = this.#generate_mobileHamburger();
+    this.topConEl.append(hamburgerEl, this.h1El, navBarEl);
     const bottomConEl = this.createElement('div', false, [
       new ElementAttribute('id', 'headerBottomCon'),
     ]);
@@ -80,6 +83,6 @@ class Header extends Component {
     this.#searchBarEl = this.#generate_searchBar();
     this.#mainBackButtonEl = this.#generate_mainBackButton();
     bottomConEl.append(this.#searchBarEl, this.#mainBackButtonEl, iconEl);
-    headerEl.append(topConEl, bottomConEl);
+    headerEl.append(this.topConEl, bottomConEl);
   }
 }
