@@ -199,9 +199,9 @@ header h1 {
   background-repeat: no-repeat;
   overflow: hidden;
   height: 90%;
-  width: 65%;
+  width: 85%;
   position: fixed;
-  right: 17.5%;
+  right: 7.5%;
   top: 5%;
   padding: 0;
   border-radius: 2rem;
@@ -891,7 +891,6 @@ button:focus {
     padding: 2% 0 0 0;
   }
   #headerTopCon .cart {
-    z-index: 1;
     height: 100%;
   }
   #headerTopCon.folded .cart {
@@ -948,11 +947,18 @@ button:focus {
     width: 100%;
     box-shadow: none;
     left: 100%;
+    z-index: 20;
   }
 
   #navbar ul li a,
   .dropbtn {
     width: 100%;
+  }
+  .backdrop {
+    z-index: 2;
+  }
+  .cart.active {
+    height: 85% !important;
   }
 }
 @media only screen and (max-width: 375px) {
