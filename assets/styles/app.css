@@ -153,15 +153,12 @@ header h1 {
 }
 /*cart*/
 .cart {
-  /* border-left: 0.5px solid black;
-  border-bottom: 0.5px solid black; */
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
   position: fixed;
   right: 0;
   text-align: center;
   background: rgb(0, 152, 212);
-  padding: 0.4rem 0rem 0rem 0rem;
+  padding: 0.4rem 0 0 0;
   z-index: 15;
   height: fit-content;
 }
@@ -576,16 +573,16 @@ button:focus {
   border-radius: 0 0 25px 25px;
   font-size: 20px;
   height: auto;
-  width: 30%;
+  width: 100%;
   box-shadow: 0 2px 8px rgb(0 0 0 / 26%);
 }
 
 .p_expand img {
-  height: 14rem;
+  height: 60vh;
   pointer-events: none;
 }
 .p_expand .img-container {
-  height: 14rem;
+  height: 60vh;
 }
 
 .p_expand h2 {
@@ -648,6 +645,8 @@ button:focus {
 .p_expand {
   overflow: visible;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-evenly;
   box-shadow: none;
   width: 0;
@@ -675,10 +674,9 @@ button:focus {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 70%;
   margin: 1rem;
   border-radius: 15px;
-  box-shadow: 0 2px 8px rgba(73, 58, 58, 0.26);
+  background-color: rgb(128 128 128 / 16%);
 }
 
 /*done!--------------------------------------------------------------------------slide-show--------------------------------------------------------------------------------*/

@@ -53,7 +53,7 @@ class ProductItem extends Component {
       App.addProdToCart(this.#product);
     });
     const mainCon = this.createElement('div', 'main-data');
-    mainCon.append(imgCon, contentCon, addBtn);
+    mainCon.append(imgCon, contentCon);
     const extraInfo = this.createElement('p');
     extraInfo.textContent = this.#product.extraData;
     const extraCon = this.createElement('div', 'extra-data');
@@ -62,6 +62,7 @@ class ProductItem extends Component {
       this.#product.element
     );
     extraCon.append(extraInfo, this.#product.element.slideShow);
-    this.#product.element.append(mainCon, extraCon);
+    mainCon.append(extraCon, addBtn);
+    this.#product.element.append(mainCon);
   }
 }
