@@ -42,7 +42,7 @@ class Cart extends Component {
     const orderButtonEl = this.createElement('button', 'order-button');
     orderButtonEl.textContent = 'Order';
     this.toggleButtonEl = this.createElement('button', 'toggle-button');
-    this.toggleButtonEl.textContent = 'Open Cart';
+    this.toggleButtonEl.textContent = 'Cart';
     this.toggleButtonEl.addEventListener('click', () => {
       const activeCart = this.cartEl.classList.contains('active');
       if (this.#cart.items.length === 0 && !activeCart) {
@@ -121,7 +121,7 @@ class Cart extends Component {
   toggleDisplay() {
     this.toggleButtonEl.textContent = !this.cartEl.classList.contains('active')
       ? 'Back'
-      : 'Open Cart';
+      : 'Cart';
     App.domAnimator.fade(this.cartEl);
     this.cartEl.classList.toggle('active');
     this.toggleBackDrop();

@@ -115,22 +115,22 @@ header h1 {
 }
 /*header:bottom container: i (font awsome icon. also defined as fas fa-search) */
 #headerBottomCon i {
-  font-size: 0.8rem;
+  font-size: 120%;
   transform: rotate(90deg);
   opacity: 60%;
   color: black;
   position: absolute;
-  padding: 0.2rem;
+  padding: 0.5%;
 }
 /*main search bar (INPUT)*/
 #mainSearchBar {
   border: 0;
-  padding-left: 1.2rem;
+  padding-left: 12%;
   border-radius: 0px 0px 10px 0px;
   box-shadow: 0 2px 3px rgba(95, 191, 255, 0.26);
-  font-size: 0.8rem;
-  width: 15rem;
-  height: 1.2rem;
+  font-size: 120%;
+  width: 100%;
+  line-height: 160%;
   background-color: transparent;
 }
 /*main search bar focus(INPUT)*/
@@ -846,6 +846,7 @@ button:focus {
   transition: all 0.3s;
   position: relative;
   overflow: hidden;
+  width: 100%;
   z-index: 1;
 }
 
@@ -867,11 +868,20 @@ button:focus {
   #mainBackButton {
     height: 6vh;
   }
+  #headerBottomCon i {
+    font-size: 110%;
+
+    padding: 1.5%;
+  }
+
   #mainSearchBar {
-    width: 70%;
+    padding-left: 15%;
+    font-size: 100%;
+    width: 80%;
+    line-height: 140%;
   }
   header h1 {
-    font-size: 68%;
+    font-size: 90%;
   }
 
   .cart {
@@ -943,5 +953,10 @@ button:focus {
   #navbar ul li a,
   .dropbtn {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 375px) {
+  header h1 {
+    display: none;
   }
 }
