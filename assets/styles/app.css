@@ -202,7 +202,7 @@ header h1 {
   width: 85%;
   position: fixed;
   right: 7.5%;
-  top: 5%;
+  top: 8%;
   padding: 0;
   border-radius: 2rem;
 }
@@ -420,8 +420,9 @@ button:focus {
   flex-wrap: wrap;
   display: flex;
   list-style: none;
-  margin: 1rem 2rem 0 0;
+  margin: 1rem 2rem auto auto;
   padding: 0;
+  width: 98%;
 }
 .product-item .discount-tag {
   pointer-events: none;
@@ -454,7 +455,7 @@ button:focus {
   display: none;
 }
 .product-item {
-  margin: 0 0 2rem 2rem;
+  margin: 0 0 2% 2%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   width: 9rem;
   max-width: 90%;
@@ -965,4 +966,23 @@ button:focus {
   header h1 {
     display: none;
   }
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

@@ -52,6 +52,11 @@ class Header extends Component {
     mobileMenuButton.append(burgerLine1, burgerLine2, burgerLine3);
     mobileMenuButton.addEventListener('click', () => {
       target.classList.toggle('folded');
+      document.body.style.overflow = target.classList.contains('folded')
+        ? 'scroll'
+        : 'hidden';
+      const cartIsOpen = App.cart.cartEl.classList.contains('active');
+      cartIsOpen && App.cart.toggleDisplay();
     });
     return mobileMenuButton;
   }

@@ -119,9 +119,9 @@ class Cart extends Component {
   }
 
   toggleDisplay() {
-    this.toggleButtonEl.textContent = !this.cartEl.classList.contains('active')
-      ? 'Back'
-      : 'Cart';
+    const active = this.cartEl.classList.contains('active');
+    document.body.style.overflow = active ? 'scroll' : 'hidden';
+    this.toggleButtonEl.textContent = active ? 'Cart' : 'Back';
     App.domAnimator.fade(this.cartEl);
     this.cartEl.classList.toggle('active');
     this.toggleBackDrop();
