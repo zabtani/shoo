@@ -244,7 +244,8 @@ header h1 {
   background-color: rgba(0, 78, 124, 0.918);
   align-self: center;
   font-weight: bolder;
-  line-height: auto;
+
+  height: 100%;
 }
 .cart-total.flash,
 .cart.active .cart-total.flash {
@@ -253,15 +254,16 @@ header h1 {
   font-weight: bolder;
 }
 .cart.active .cart-total {
+  line-height: auto;
   color: gold;
   text-align: center;
   font-size: 1.2rem;
-  align-self: center;
-  font-weight: bolder;
+
   width: 100%;
   margin: 0;
   padding: 0.5rem;
   background-color: rgb(161, 75, 0);
+  height: fit-content;
 }
 .cart-buttons-container {
   display: flex;
