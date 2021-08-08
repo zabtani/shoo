@@ -136,7 +136,6 @@ header h1 {
 /*main search bar focus(INPUT)*/
 #mainSearchBar:focus {
   outline: none;
-  border-bottom: 2px solid rgba(135, 207, 235, 0.747);
   background-color: rgba(0, 174, 255, 0.2);
 }
 
