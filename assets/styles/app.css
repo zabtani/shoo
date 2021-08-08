@@ -578,11 +578,11 @@ button:focus {
 }
 
 .p_expand img {
-  height: 60vh;
+  height: 75vh;
   pointer-events: none;
 }
 .p_expand .img-container {
-  height: 60vh;
+  height: 75vh;
 }
 
 .p_expand h2 {
@@ -653,9 +653,9 @@ button:focus {
   transition: width 0.35s;
 }
 .p_expand.slide {
-  width: 100%;
+  width: 80%;
 }
-.extra-data p {
+.p_expand p {
   padding: 1rem;
   margin: 0.5rem;
 }
@@ -670,6 +670,7 @@ button:focus {
   display: block;
 }
 .p_expand .extra-data {
+  width: 65%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -678,7 +679,9 @@ button:focus {
   border-radius: 15px;
   background-color: rgb(128 128 128 / 16%);
 }
-
+.main-data.none {
+  display: none;
+}
 /*done!--------------------------------------------------------------------------slide-show--------------------------------------------------------------------------------*/
 /*slide-show*/
 .slide-show {

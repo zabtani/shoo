@@ -87,6 +87,7 @@ class SlideShow {
   }
   //renders  a slideShow gallery:
   render(imgs, hiddenOnToggleEl, autoSlide = false, cover = false) {
+    console.log(hiddenOnToggleEl);
     this.slideShow = document.createElement('div'); //make slideshow element avilable for this instance
     this.slideShow.className = 'slide-show'; // give class
     this.slideShow.hiddenOnToggleEl = hiddenOnToggleEl; //define element to hide on toggle avilable for this instance
