@@ -124,19 +124,19 @@ header h1 {
 }
 /*main search bar (INPUT)*/
 #mainSearchBar {
-  border: 0;
+  /* border: 0;
   padding-left: 12%;
   border-radius: 0px 0px 10px 0px;
   box-shadow: 0 2px 3px rgba(95, 191, 255, 0.26);
   font-size: 120%;
   width: 100%;
   line-height: 160%;
-  background-color: transparent;
+  background-color: transparent; */
 }
 /*main search bar focus(INPUT)*/
 #mainSearchBar:focus {
-  outline: none;
-  background-color: rgba(0, 174, 255, 0.2);
+  /* outline: none;
+  background-color: rgba(0, 174, 255, 0.2); */
 }
 
 /*backdrop*/
@@ -897,10 +897,10 @@ button:focus {
   }
 
   #mainSearchBar {
-    padding-left: 15%;
+    /* padding-left: 15%;
     font-size: 100%;
     width: 80%;
-    line-height: 140%;
+    line-height: 140%; */
   }
   header h1 {
     font-size: 90%;
@@ -962,7 +962,7 @@ button:focus {
   }
   #headerTopCon.folded #navbar {
     margin: 0;
-    height: 68px;
+    height: 8vh;
   }
   #navbar ul li .dropdown-content {
     position: absolute;
