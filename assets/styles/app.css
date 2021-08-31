@@ -962,7 +962,7 @@ button:focus {
   }
   #headerTopCon.folded #navbar {
     margin: 0;
-    height: 8vh;
+    height: 68px;
   }
   #navbar ul li .dropdown-content {
     position: absolute;
