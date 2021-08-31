@@ -1,5 +1,6 @@
 class ProductsList extends Component {
   hideInfoOnFilter;
+  listWithContent;
   #products = [];
   constructor(renderHook, productsObj) {
     super(renderHook, false);
@@ -55,6 +56,8 @@ class ProductsList extends Component {
   }
 
   filter(filter, property = 'name', effect = 'fade') {
+    this.noItemsEl.classList.add('none');
+    this.listWithContent = false;
     if (this.expandedProduct) this.closeExpandedProduct();
     this.hideInfoOnFilter();
     if (this.productsListEl.classList.contains('none')) {
@@ -64,7 +67,7 @@ class ProductsList extends Component {
       //conditions to filter a product
       let filterd;
       if (!product[property]) {
-        //if this property containe falsey value, filter it.
+        //if this property contains falsey value, filter it.
         filterd = true;
       } else if (typeof product[property] === 'number') {
         if (typeof filter === 'object' && property === 'price') {
@@ -90,14 +93,17 @@ class ProductsList extends Component {
         productCl.add('none');
       }
       if (!productCl.contains('none')) {
+        if (!this.listWithContent) this.listWithContent = true;
         if (effect === 'fade') {
           App.domAnimator.fade(product.element, 30);
         } else if (effect === 'slide') {
-          console.log('slidee');
           App.domAnimator.slideIn(product.element);
         }
       }
     });
+    if (!this.listWithContent) {
+      this.noItemsEl.classList.remove('none');
+    }
   }
 
   render() {
@@ -107,5 +113,8 @@ class ProductsList extends Component {
     for (const product of this.#products) {
       new ProductItem('productlist', product);
     }
+    this.noItemsEl = this.createRootElement('div', 'no-items none');
+    this.noItemsEl.textContent = 'Sorry, no such a candy!';
+    this.productsListEl.prepend(this.noItemsEl);
   }
 }

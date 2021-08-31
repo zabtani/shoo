@@ -27,7 +27,7 @@ class Header extends Component {
     const button = this.createElement('button', 'mainBackButton', [
       new ElementAttribute('id', 'mainBackBtn'),
     ]);
-    button.textContent = 'Back to all products';
+    button.textContent = 'Go Back';
     button.addEventListener('click', () => {
       button.classList.remove('visible');
       this.#searchBarEl.value = '';

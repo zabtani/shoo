@@ -470,7 +470,7 @@ button:focus {
 
 .product-item h2 {
   color: #540075;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   margin: 0.3rem;
 }
 
@@ -484,13 +484,13 @@ button:focus {
   font-weight: bold;
 }
 .p_expand .de {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
 }
 .p_expand .pr {
-  font-size: 1.8rem;
+  font-size: 200%;
 }
 .p_expand #originalPrice {
-  font-size: 1.1rem;
+  font-size: 70%;
 }
 .p_expand .main-data button {
   font-size: 1.4rem;
@@ -572,27 +572,35 @@ button:focus {
   border-radius: 0 0 25px 25px;
   font-size: 20px;
   height: auto;
-  width: 100%;
+  width: 80%;
+  background: rgb(208, 208, 208);
+  background: radial-gradient(
+    circle,
+    rgba(208, 208, 208, 0) 3%,
+    rgba(208, 208, 208, 0) 72%,
+    rgba(200, 200, 200, 0.6505952722886029) 100%
+  );
+
   box-shadow: 0 2px 8px rgb(0 0 0 / 26%);
 }
 
 .p_expand img {
-  height: 75vh;
+  height: 60vh;
   pointer-events: none;
 }
 .p_expand .img-container {
-  height: 75vh;
+  height: 60vh;
 }
 
 .p_expand h2 {
-  font-size: 2.5rem;
+  font-size: 300%;
 }
 .p_expand h3 {
   font-size: 0.8rem;
 }
 
 .product-item .add_btn {
-  font-size: 0.65rem;
+  font-size: 100%;
   margin: 0;
   border-radius: 100% 100% 0 0;
   margin-top: 0.3rem;
@@ -629,9 +637,7 @@ button:focus {
 .product-item .slide-show {
   display: none;
 }
-.p_expand p {
-  font-size: 0.85rem;
-}
+
 .p_expand .slide-show {
   display: flex;
   position: relative;
@@ -655,15 +661,16 @@ button:focus {
   width: 80%;
 }
 .p_expand p {
-  padding: 1rem;
-  margin: 0.5rem;
+  text-align: left;
+  font-size: 85%;
+  padding: 2%;
+  margin: 1%;
 }
 
 .p_expand .discountTag {
   border-style: solid;
   border-width: 0 30px 30px 0;
   border-color: transparent #608a32 transparent transparent;
-  font-size: 3rem;
 }
 .p_expand .visible {
   display: block;
@@ -696,10 +703,9 @@ button:focus {
   position: absolute;
   object-fit: cover;
   height: 80vh;
-  width: 90%;
-  top: 0;
-  left: 0;
-  margin: 6rem 0 0 4rem;
+  width: 90vw;
+  top: 17vh;
+  left: 5vw;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
 }
 
@@ -731,7 +737,7 @@ button:focus {
   background-color: black;
   color: white;
   align-self: center;
-  padding: 0.5rem;
+  padding: 2%;
   opacity: 0.5;
   line-height: 100%;
 }
@@ -742,7 +748,7 @@ button:focus {
   opacity: 1;
 }
 .slide-show.large .arrow {
-  padding: 1.2rem;
+  padding: 2.5%;
 }
 .slide-show .arrows-container {
   position: absolute;
@@ -779,20 +785,23 @@ button:focus {
   opacity: 0.8;
 }
 .mainBackButton {
+  border-radius: 0;
   display: none;
   width: fit-content;
-  padding: 0.2rem;
   border: none;
   color: #fff;
-  font-size: 0.7rem;
+  font-size: 1rem;
   letter-spacing: 0.15rem;
-  border-radius: 0 10rem 10rem 0;
   transition: all 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
+  border-radius: 0 5px 5px 0;
 }
-
+.no-items {
+  margin-top: 15%;
+  font-size: 150%;
+}
 .toggle-button:after,
 .mainBackButton:after {
   content: '';
@@ -802,7 +811,6 @@ button:focus {
   width: 100%;
   height: 100%;
   background-color: #0cf;
-  border-radius: 0 10rem 10rem 0;
   z-index: -2;
 }
 .toggle-button::before,
@@ -815,7 +823,6 @@ button:focus {
   height: 100%;
   background-color: #008fb3;
   transition: all 0.3s;
-  border-radius: 0 10rem 10rem 0;
   z-index: -1;
 }
 .toggle-button:hover,
@@ -831,15 +838,6 @@ button:focus {
   outline: none;
 }
 
-/*main back button (BUTTON)*/
-/* #mainBackBtn {
-  margin: 0;
-  background-color: rgba(0, 152, 212, 0.884);
-  font-size: 0.6rem;
-  font-weight: bolder;
-  display: none;
-  border-radius: 0 0 5px 5px;
-} */
 #mainBackBtn.visible {
   display: block;
 }
@@ -873,6 +871,22 @@ button:focus {
   pointer-events: none;
 }
 @media only screen and (max-width: 650px) {
+  .product-item .add_btn {
+    font-size: 80%;
+  }
+  .p_expand img {
+    height: 45vh;
+  }
+  .slide-show.large {
+    height: 65vh;
+    top: 25vh;
+  }
+  .p_expand .extra-data {
+    width: 100%;
+  }
+  .p_expand .main-data {
+    width: 110%;
+  }
   #mainBackButton {
     height: 6vh;
   }
