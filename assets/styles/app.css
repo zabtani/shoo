@@ -240,8 +240,6 @@ header h1 {
   background-color: rgba(0, 78, 124, 0.918);
   align-self: center;
   font-weight: bolder;
-
-  height: 100%;
 }
 .cart-total.flash,
 .cart.active .cart-total.flash {
@@ -891,9 +889,9 @@ button:focus {
     height: 6vh;
   }
   #headerBottomCon i {
-    /* font-size: 110%;
+    font-size: 110%;
 
-    padding: 1.5%; */
+    padding: 1.5%;
   }
 
   #mainSearchBar {
@@ -903,7 +901,7 @@ button:focus {
     line-height: 140%;
   }
   header h1 {
-    /* font-size: 90%; */
+    font-size: 90%;
   }
 
   .cart {
@@ -916,7 +914,7 @@ button:focus {
     height: 100%;
   }
   #headerTopCon.folded .cart {
-    /* height: fit-content; */
+    height: fit-content;
   }
 
   .cart-icon {
