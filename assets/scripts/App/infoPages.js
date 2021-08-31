@@ -40,7 +40,8 @@ class infoPages extends Component {
     }
   }
 
-  hide() {``
+  hide() {
+    ``;
     if (this.#openPage) {
       this.#openPage.classList.remove('visible');
       const slideShow = this.#openPage.slideShow;
