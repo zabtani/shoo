@@ -891,19 +891,19 @@ button:focus {
     height: 6vh;
   }
   #headerBottomCon i {
-    font-size: 110%;
+    /* font-size: 110%;
 
-    padding: 1.5%;
+    padding: 1.5%; */
   }
 
   #mainSearchBar {
-    /* padding-left: 15%;
+    padding-left: 15%;
     font-size: 100%;
     width: 80%;
-    line-height: 140%; */
+    line-height: 140%;
   }
   header h1 {
-    font-size: 90%;
+    /* font-size: 90%; */
   }
 
   .cart {
@@ -916,7 +916,7 @@ button:focus {
     height: 100%;
   }
   #headerTopCon.folded .cart {
-    height: fit-content;
+    /* height: fit-content; */
   }
 
   .cart-icon {
