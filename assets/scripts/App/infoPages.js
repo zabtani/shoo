@@ -18,15 +18,11 @@ class infoPages extends Component {
       const paragraph = this.createElement('p');
       paragraph.textContent = pageData.content;
       page.append(title);
-      if (pageData.imgUrls) {
-        const slideShow = new SlideShow().render(
-          pageData.imgUrls,
-          page,
-          pageData.imgUrls.length > 1 ? 8000 : false,
-          true
-        );
-        page.append(slideShow);
-        page.slideShow = slideShow;
+      if (pageData.pageImg) {
+        const pageImg = document.createElement('div');
+        pageImg.style.backgroundImage = `url(${pageData.pageImg})`;
+        pageImg.className = 'pageImage';
+        page.append(pageImg);
       }
       page.append(paragraph);
       this.infoPagesEl.append(page);
@@ -35,19 +31,13 @@ class infoPages extends Component {
   render() {
     this.infoPagesEl = this.createRootElement('div', 'infoPages');
     if (this.infoPagesData) {
-      // is that a must in all classes? why should i check if  is there and to render here at all if fetch will give it to me in conatrctur? ?
       this.renderInfoPages();
     }
   }
 
   hide() {
-    ``;
     if (this.#openPage) {
       this.#openPage.classList.remove('visible');
-      const slideShow = this.#openPage.slideShow;
-      if (slideShow) {
-        slideShow.restart();
-      }
       this.#openPage = false;
     }
   }

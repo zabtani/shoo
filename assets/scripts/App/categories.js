@@ -65,7 +65,6 @@ class Categories extends Component {
           subs.push(sub);
         });
       } else {
-        console.log(category.value);
         subs = this.prodList.propertyValues(category.value); //sub category for each value of property
         linkTextHandler = (sub) => {
           if (category.subTextPattern) {
