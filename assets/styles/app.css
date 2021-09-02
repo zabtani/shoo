@@ -929,7 +929,6 @@ button:focus {
   }
 
   .cart {
-    min-height: 10vh;
     width: 50%;
   }
   #headerTopCon .cart {
