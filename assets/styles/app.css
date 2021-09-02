@@ -350,7 +350,7 @@ header h1 {
 
 .info h3 {
   width: 40%;
-  margin: 4vh auto auto auto;
+  margin: 3vh auto auto auto;
   padding: 1rem;
   font-weight: bolder;
   background-color: rgba(26, 188, 252, 0.767);
@@ -844,6 +844,7 @@ button:focus {
 
 #mainBackBtn.visible {
   display: block;
+  margin-bottom: 1vh;
 }
 
 .toggle-button {
@@ -913,10 +914,6 @@ button:focus {
   #mainBackButton {
     height: 6vh;
   }
-  #headerBottomCon i {
-    font-size: 100%;
-    padding: 0.7vh;
-  }
 
   #mainSearchBar {
     padding-left: 15%;
@@ -931,7 +928,7 @@ button:focus {
   .cart {
     display: flex;
     flex-direction: column;
-    min-height: 8vh;
+    min-height: 7vh;
     width: 50%;
   }
   .cart-total {
