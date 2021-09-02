@@ -939,7 +939,7 @@ button:focus {
     height: fit-content;
   }
   .cart-total {
-    padding-top: 2%;
+    margin-top: 3%;
   }
   .cart-icon {
     margin-top: 1%;
