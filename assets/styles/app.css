@@ -929,7 +929,7 @@ button:focus {
   }
 
   .cart {
-    min-height: 8vh;
+    min-height: 10vh;
     width: 50%;
   }
   #headerTopCon .cart {
@@ -938,7 +938,9 @@ button:focus {
   #headerTopCon.folded .cart {
     height: fit-content;
   }
-
+  .cart-total {
+    padding-top: 2%;
+  }
   .cart-icon {
     margin-top: 1%;
   }
