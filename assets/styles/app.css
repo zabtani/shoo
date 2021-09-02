@@ -929,8 +929,14 @@ button:focus {
   }
 
   .cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     min-height: 8vh;
     width: 50%;
+  }
+  .cart-total {
+    width: 100%;
   }
   #headerTopCon .cart {
     height: 100%;
@@ -938,9 +944,7 @@ button:focus {
   #headerTopCon.folded .cart {
     height: fit-content;
   }
-  .cart-total {
-    margin-top: 3%;
-  }
+
   .cart-icon {
     margin-top: 1%;
   }
