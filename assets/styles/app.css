@@ -184,7 +184,7 @@ header h1 {
   display: flex;
   flex-wrap: nowrap;
   width: 50%;
-  margin-right: 2rem;
+  margin-right: 10%;
   overflow: hidden;
   justify-content: space-between;
 }
@@ -877,7 +877,7 @@ button:focus {
     margin-right: 3%;
   }
   .cart-product-info {
-    font-size: 60%;
+    font-size: 80%;
     width: 95%;
   }
   .info h3 {
