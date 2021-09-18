@@ -20,7 +20,7 @@ class infoPages extends Component {
       page.append(title);
       if (pageData.pageImg) {
         const pageImg = document.createElement('div');
-        pageImg.style.backgroundImage = `url(${pageData.pageImg})`;
+        pageImg.style.backgroundImage = `url(${pageData.pageImg}),url('http://superstorefinder.net/support/wp-content/uploads/2018/01/blue_loading.gif')`;
         pageImg.className = 'pageImage';
         page.append(pageImg);
       }

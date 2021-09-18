@@ -80,9 +80,11 @@ class Header extends Component {
       new ElementAttribute('id', 'headerBottomCon'),
     ]);
     const iconEl = this.createElement('i', 'fas fa-search');
+    const searchBarConEl = this.createElement('div', 'searchBarCon');
     this.#searchBarEl = this.#generate_searchBar();
     this.#mainBackButtonEl = this.#generate_mainBackButton();
-    bottomConEl.append(this.#searchBarEl, this.#mainBackButtonEl, iconEl);
+    searchBarConEl.append(iconEl, this.#searchBarEl);
+    bottomConEl.append(searchBarConEl, this.#mainBackButtonEl);
     headerEl.append(this.topConEl, bottomConEl);
   }
 }

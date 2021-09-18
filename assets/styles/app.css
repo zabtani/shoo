@@ -115,15 +115,19 @@ header h1 {
   margin: 0;
   width: max-content;
 }
+.searchBarCon {
+  display: flex;
+}
 /*header:bottom container: i (font awsome icon. also defined as fas fa-search) */
 #headerBottomCon i {
+  padding: 8px;
   font-size: 120%;
   transform: rotate(90deg);
   opacity: 60%;
   color: black;
   position: absolute;
-  padding: 0.5%;
 }
+
 /*main search bar (INPUT)*/
 #mainSearchBar {
   border: 0;
@@ -349,7 +353,7 @@ header h1 {
 }
 
 .info h3 {
-  width: 40%;
+  width: fit-content;
   margin: 3vh auto auto auto;
   padding: 1rem;
   font-weight: bolder;
@@ -707,9 +711,10 @@ button:focus {
 }
 .pageImage {
   margin: auto;
-  width: 80%;
+  width: 100%;
+  background-position-x: center;
   height: 43vh;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -876,6 +881,9 @@ button:focus {
   pointer-events: none;
 }
 @media only screen and (max-width: 650px) {
+  #headerBottomCon i {
+    padding: 1%;
+  }
   .cart-item-img {
     margin-right: 3%;
   }
@@ -885,7 +893,6 @@ button:focus {
   }
   .info h3 {
     font-size: 92%;
-    width: 65%;
   }
   .pageImage {
     width: 90%;
@@ -1032,4 +1039,139 @@ button:focus {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+@media only screen and (min-width: 2400px) {
+  .cart-product-info {
+    font-size: 180%;
+    width: 95%;
+  }
+  .info h3 {
+    font-size: 192%;
+  }
+
+  .info p {
+    width: 90%;
+  }
+
+  /*
+  work todo : fit for 2500 * 1080 res ...
+  .product-item .add_btn {
+    font-size: 80%;
+  }
+  .p_expand img {
+    opacity: 1 !important;
+    height: 45vh;
+  }
+  .slide-show.large {
+    height: 65vh;
+    top: 25vh;
+  }
+  .p_expand .extra-data {
+    width: 100%;
+  }
+  .p_expand .main-data {
+    width: 110%;
+  }
+  #mainBackButton {
+    height: 6vh;
+  }
+
+  #mainSearchBar {
+    padding-left: 15%;
+    font-size: 100%;
+    width: 80%;
+    line-height: 140%;
+  }
+  header h1 {
+    font-size: 90%;
+  }
+
+  .cart {
+    display: flex;
+    flex-direction: column;
+    min-height: 7vh;
+    width: 50%;
+  }
+  .cart-total {
+    margin-top: 7%;
+    width: 100%;
+  }
+  #headerTopCon .cart {
+    height: 100%;
+  }
+  #headerTopCon.folded .cart {
+    height: fit-content;
+  }
+
+  .cart-icon {
+    margin-top: 1%;
+  }
+  #hamburger {
+    display: flex;
+  }
+  #headerTopCon.folded {
+    position: relative;
+    width: 100%;
+    flex-direction: row;
+  }
+  #headerTopCon.folded ul {
+    display: none;
+  }
+  #headerTopCon.folded #navbar {
+    height: 0;
+  }
+  #headerTopCon #hamburger {
+    align-self: center;
+  }
+  #headerTopCon {
+    display: flex;
+    flex-direction: column;
+    background: skyblue;
+    position: absolute;
+    z-index: 3;
+    width: 50%;
+  }
+  #headerTopCon ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #headerTopCon ul li {
+    font-size: 120%;
+    width: 100%;
+  }
+  #navbar {
+    margin-top: 25%;
+    height: 100vh;
+  }
+  #headerTopCon.folded #navbar {
+    margin: 0;
+    height: 8vh;
+  }
+  #navbar ul li .dropdown-content {
+    position: absolute;
+    width: 100%;
+    box-shadow: none;
+    left: 100%;
+    z-index: 20;
+  }
+
+  #navbar ul li a,
+  .dropbtn {
+    width: 100%;
+  }
+  .backdrop {
+    z-index: 2;
+  }
+  .cart.active {
+    top: 10%;
+    left: 0;
+    width: 100%;
+    height: 85% !important;
+  }
+  .product-item {
+    width: 45%;
+    margin-bottom: 5%;
+  } */
 }

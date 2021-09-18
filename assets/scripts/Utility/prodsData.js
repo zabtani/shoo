@@ -34,7 +34,7 @@ const appData = {
       title: 'Fine As a Diamond',
       value: 'ourprod',
       pageImg:
-        'https://chowhound3.cbsistatic.com/2014/09/28373_alfajores_3000.jpg',
+        'https://images.everydayhealth.com/images/delicious-reasons-to-eat-dark-chocolate-00-722x406.jpg?w=768',
 
       content:
         "Founded in 1995 by a deeply committed Cast of Characters with broad-based business and organizational development experience, our people are dedicated to greatness each and every event! Team Higher Ground offers some of the world's most sought-after Group Leaders and Facilitators. We understand the interaction of our people with yours is a critical enabler of your satisfaction and therefore ensure all our people meet your high expectations of skill and professionalism! Here's a few words on some of the dedicated Team Building Professionals you'll work with at Team Higher Ground",
@@ -43,7 +43,7 @@ const appData = {
       title: 'Once Upon a time..',
       value: 'his',
       pageImg:
-        'https://alhalabyest.com/wp/wp-content/uploads/2018/08/cocoa-3005624_1920.jpg',
+        'https://mozartcultures.com/en/wp-content/uploads/2021/02/como-se-consume-el-chocolate_interior02.jpg',
 
       content:
         "The Good family has been making candy since the 1940's. Randy's grandmother began in Kennard, Indiana in the early 1960's. Randy took over his family's candy shop in 1992. In 2003 he built a brand new facility, making Good's the newest and largest candy shop in central Indiana.",
@@ -52,7 +52,7 @@ const appData = {
       title: 'this is our famliy',
       value: 'team',
       pageImg:
-        'https://origins.virunga.org/wp-content/uploads/sites/3/2020/11/DominqueWithTeam.jpg',
+        'https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F617609de-1dce-4eb1-b610-4e2242fc95ff.jpg?fit=scale-down&source=next&width=700',
       content:
         "Team Higher Grounds Chocolate Factory is one of our most popular team building events (especially popular in the evening as a combined Team Building with Bonus dessert), leveraging our universal of love of this age-old confectionary. Employing chocolate as our core building material, teams compete in Culinary-based Team Challenges to earn everything they need from the Candy Store to create a truly extraordinary array of chocolate sculptures. Chocolate Factory really reveals your people's creativity and inventiveness as teams design, construct, and present their original sweet treats for fun and prizes. Chocolate Factory is deliverable anywhere, anytime, but is an especially great choice for later evening events. It's an addictive team building event you'll develop a sweet tooth for and always remember",
     },
